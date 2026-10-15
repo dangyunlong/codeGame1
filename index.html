@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="离线可玩的复古 Canvas 飞机大战">
+  <title>STAR PATROL · 星际巡航</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="arcade">
+    <header><span class="eyebrow">ORBITAL DEFENSE / 01</span><h1>STAR <span>PATROL</span></h1><p>星际巡航 · 守住这片星空</p></header>
+    <section class="console" aria-label="飞机大战游戏">
+      <div class="hud"><div>SCORE <strong id="score">000000</strong></div><div>SHIELDS <strong id="lives" aria-label="剩余生命">3 / 3</strong></div></div>
+      <p class="controls">方向键 / WASD 移动 · 按住 SPACE 射击 · P 暂停</p>
+      <div class="screen">
+        <canvas id="game" width="480" height="720" aria-label="480 × 720 纵向空战区域">你的浏览器需要支持 Canvas 才能运行游戏。</canvas>
+        <div id="overlay" class="overlay">
+          <span class="eyebrow" id="overlay-tag">SYSTEM READY</span>
+          <h2 id="overlay-title">准备出击</h2>
+          <p id="overlay-text">三格护盾，一片星空。<br>按住空格，迎击来袭敌机。</p>
+          <button id="start" type="button">开始游戏 ↗</button>
+        </div>
+      </div>
+      <div class="toolbar"><span id="status" role="status">等待起飞</span><div><button id="pause" type="button" disabled>暂停</button><button id="restart" type="button">重新开始</button></div></div>
+    </section>
+    <footer><span>NO DOWNLOAD. JUST FLY.</span><span>CANVAS 2D · OFFLINE ARCADE</span></footer>
+  </main>
+</body>
+</html>
