@@ -1,0 +1,29 @@
+:root { color-scheme: dark; font-family: 'Courier New', monospace; color: #d7e7f5; background: #080c16; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 50% 15%, #15243a 0, #080c16 65%); }
+.arcade { width: min(100% - 32px, 520px); margin: 36px auto 24px; }
+header { margin-bottom: 24px; }
+.eyebrow { color: #75ddff; font-size: 11px; letter-spacing: 3px; }
+h1 { font-size: clamp(32px, 8vw, 46px); letter-spacing: -2px; margin: 10px 0 6px; line-height: 1; }
+h1 span { color: #74d6ff; }
+header p { color: #889aaf; font-size: 12px; letter-spacing: 3px; }
+.console { padding: 18px; background: #101827; border: 1px solid #2c3c52; box-shadow: 6px 6px 0 #03060c; }
+.hud { display: flex; justify-content: space-between; color: #8498b2; font-size: 10px; letter-spacing: 2px; }
+.hud strong { display: block; color: #e6f5ff; margin-top: 6px; font-size: 24px; letter-spacing: 3px; }
+#lives { color: #70d7ff; text-align: right; }
+.controls { font-size: 10px; color: #a0b1c6; margin: 14px 0; line-height: 1.6; }
+.screen { position: relative; border: 1px solid #2e4661; background: #060b18; }
+canvas { width: 100%; height: auto; display: block; image-rendering: pixelated; }
+.overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background: #050b19bf; padding: 20px; }
+.overlay[hidden] { display: none; }
+h2 { font-size: clamp(25px, 7vw, 36px); margin: 20px 0 8px; letter-spacing: 3px; }
+.overlay p { color: #aabbd0; line-height: 2; font-size: 13px; margin-bottom: 28px; }
+button { font: inherit; font-size: 12px; border: 1px solid #425c79; color: #d7e7f5; background: #18263a; padding: 9px 12px; cursor: pointer; }
+button:hover:not(:disabled) { background: #253c56; border-color: #75ddff; }
+button:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+button:disabled { opacity: .35; cursor: default; }
+#start { background: #7bdcff; border-color: #7bdcff; color: #071522; font-weight: bold; padding: 14px 24px; box-shadow: 4px 4px 0 #1d6282; }
+.toolbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 14px; }
+#status { color: #82a2ba; font-size: 11px; }
+footer { display: flex; justify-content: space-between; gap: 12px; color: #586b82; font-size: 9px; letter-spacing: 1px; margin-top: 20px; }
+@media(max-width: 400px) { .console { padding: 10px; } .arcade { margin-top: 24px; } .toolbar button { padding: 8px; } footer { flex-wrap: wrap; } }
